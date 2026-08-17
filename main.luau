@@ -315,10 +315,9 @@ local function AddESPForPlayer(player)
     highlight.Name = "ESP_Highlight"
     highlight.FillTransparency = 0.7
     highlight.OutlineTransparency = 0
-    highlight.OutlineColor3 = Color3.fromRGB(255, 80, 80)
+    highlight.OutlineColor = Color3.new(255, 80, 80)  -- Updated line
     highlight.Adornee = character
     highlight.Parent = character
-
     local head = character:FindFirstChild("Head")
     if head then
         local nameTag = Instance.new("BillboardGui")
